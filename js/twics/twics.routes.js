@@ -12,11 +12,28 @@
   function Router ($stateProvider, $urlRouterProvider) {
     $stateProvider
     .state('twicsIndex', {
-      url: '/index',
+      url: '/twics',
       templateUrl: 'js/twics/ng-views/index.html',
-      controller: 'GrumbleIndexController',
+      controller: 'TwicIndexController',
       controllerAs: 'vm'
     })
-    $urlRouterProvider.otherwise('/index')
+    .state('twicNew', {
+      url: '/twics/new',
+      templateUrl: 'js/twics/ng-views/new.html',
+      controller: 'TwicNewController',
+      controllerAs: 'vm'
+    })
+    .state('twicShow', {
+      url: '/twics/:id',
+      templateUrl: 'js/twics/ng-views/show.html',
+      controller: 'TwicShowController',
+      controllerAs: 'vm'
+    })
+    .state('twicEdit', {
+      url: '/twics/:id/edit',
+      templateUrl: 'js/twics/ng-views/edit.html',
+      controller: 'TwicEditController',
+      controllerAs: 'vm'
+    })
   }
 })()

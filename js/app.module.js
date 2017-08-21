@@ -2,6 +2,7 @@
 
 (function () {
   angular.module('twics', [
-    'ui.router'
+    'ui.router',
+    'ngResource'
   ])
 })()
