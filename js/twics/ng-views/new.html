@@ -2,9 +2,9 @@
 
 <form>
   <input placeholder="Content" data-ng-model="vm.twic.content" />
-  <button type="button" data-ng-click="vm.create()">Create</button>
+  <input type="submit" data-ng-click="vm.create()" value="Submit">
 </form>
 
 <pre>
-  {{vm.twic | json}}
+  {{ vm.twic | json }}
 </pre>

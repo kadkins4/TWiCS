@@ -2,17 +2,14 @@
 (function () {
   angular.module('twics')
   .controller('TwicNewController', [
-    '$state',
     'Twic',
     TwicNewController
   ])
 
-  function TwicNewController ($state, Twic) {
+  function TwicNewController (Twic) {
     this.twic = new Twic()
     this.create = function () {
-      this.twic.$save(() => {
-        $state.go('twicShow')
-      })
+      this.twic.$save()
     }
   }
 })()
