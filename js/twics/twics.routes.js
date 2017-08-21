@@ -29,11 +29,5 @@
       controller: 'TwicShowController',
       controllerAs: 'vm'
     })
-    .state('twicEdit', {
-      url: '/twics/:id/edit',
-      templateUrl: 'js/twics/ng-views/edit.html',
-      controller: 'TwicEditController',
-      controllerAs: 'vm'
-    })
   }
 })()

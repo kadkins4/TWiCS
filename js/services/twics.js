@@ -1,13 +1,17 @@
-angular.module('twics')
-.factory('Twic', [
-  '$resource',
-  twicService
-])
+/* global angular */
 
-function twicService ($resource) {
-  return $resource('http://localhost:3000/twics/:id', {}, {
-    update: {
-      method: 'PUT'
-    }
-  })
-}
+(function () {
+  angular.module('twics')
+  .factory('Twic', [
+    '$resource',
+    twicService
+  ])
+
+  function twicService ($resource) {
+    return $resource('http://localhost:3000/twics/:id', {}, {
+      update: {
+        method: 'PUT'
+      }
+    })
+  }
+})()
