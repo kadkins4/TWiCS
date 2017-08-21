@@ -9,7 +9,7 @@ function TwicNewController ($state, Twic) {
   this.twic = new Twic()
   this.create = function () {
     this.twic.$save(() => {
-      $state.go('twicIndex')
+      $state.go('twicShow')
     })
   }
 }
