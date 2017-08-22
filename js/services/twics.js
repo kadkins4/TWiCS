@@ -8,7 +8,7 @@
   ])
 
   function twicService ($resource) {
-    return $resource('http://localhost:3000/phrases/:id.json', {}, {
+    return $resource('http://localhost:3000/phrases/:id', {}, {
       update: {
         method: 'PUT'
       }
