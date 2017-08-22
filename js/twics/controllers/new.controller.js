@@ -11,7 +11,8 @@
     this.twic = new Twic()
     this.create = function () {
       this.twic.$save(() => {
-        $state.go('twicsIndex')
+        console.log('/#/twics/{ id: this.twic.id }')
+        $state.go('/#/twics/{{ this.twic.id }}')
       })
     }
   }

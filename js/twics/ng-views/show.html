@@ -1,9 +1,6 @@
-<h2>{{ vm.twic.content }}</h2>
-
-<p>JSON</p>
-{{ vm.twic }}
-
-<p>PHOTO</p>
-<p ng-repeat="photo in vm.twic.photos">
-  {{ photo.photo_url }}
-</p>
+<div class="response-outer">
+  <h4>Your Phrase: '{{ vm.twic.content }}'</h4>
+  <div class="response-inner">
+    <img ng-repeat="photo in vm.twic.photos" ng-src="{{ photo.photo_url}}" class="response"/>
+  </div>
+</div>
