@@ -1,8 +1,7 @@
 /* global angular */
 
 (function () {
-  angular
-  .module('twics')
+  angular.module('twics')
   .config([
     '$stateProvider',
     '$urlRouterProvider',
@@ -29,11 +28,6 @@
       controller: 'TwicShowController',
       controllerAs: 'vm'
     })
-    .state('twicEdit', {
-      url: '/twics/:id/edit',
-      templateUrl: 'js/twics/ng-views/edit.html',
-      controller: 'TwicEditController',
-      controllerAs: 'vm'
-    })
+    $urlRouterProvider.otherwise('/new')
   }
 })()

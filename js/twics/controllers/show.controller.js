@@ -1,10 +1,13 @@
-angular.module('twics')
-.controller('TwicShowController', [
-  '$stateParams',
-  'Twic',
-  TwicShowController
-])
+/* global angular */
+(function () {
+  angular.module('twics')
+  .controller('TwicShowController', [
+    '$state',
+    'Twic',
+    TwicShowController
+  ])
 
-function TwicShowController($stateParams, Twic) {
-  this.twic = Twic.get({id: $stateParams.id})
-}
+  function TwicShowController ($state, Twic) {
+    this.twic = Twic.get({ id: $state.params.id })
+  }
+})()

@@ -1,3 +1,5 @@
+/* global angular */
+
 (function () {
   angular.module('twics')
   .controller('TwicIndexController', [
