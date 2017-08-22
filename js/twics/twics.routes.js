@@ -28,6 +28,6 @@
       controller: 'TwicShowController',
       controllerAs: 'vm'
     })
-    $urlRouterProvider.otherwise('/new')
+    $urlRouterProvider.otherwise('/twics/new')
   }
 })()

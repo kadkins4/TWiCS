@@ -1,7 +1,10 @@
-<h2>New Twic</h2>
+<h2>See a picture value of your phrases!</h2>
 
 <form>
-  <input placeholder="Content" data-ng-model="vm.twic.content" />
+  <label>Phrase:</label>
+  <input placeholder="Enter Tweet Info" type="text" data-ng-model="vm.twic.content" />
+  <p>140 Character Max</p>
+  <br>
   <input type="submit" data-ng-click="vm.create()" value="Submit">
 </form>
 
