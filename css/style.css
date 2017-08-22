@@ -1,0 +1,16 @@
+
+
+
+body {
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  background-color: #5c4d00
+}
+
+
+form{
+  text-align: center;
+}
+.title {
+ text-align: center;
+ font-style: oblique;
+}
