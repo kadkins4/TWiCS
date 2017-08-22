@@ -10,7 +10,22 @@ body {
 form{
   text-align: center;
 }
+
 .title {
  text-align: center;
  font-style: oblique;
+}
+
+.tweet_input {
+  width: 30vw;
+  word-wrap: break-word;
+  line-height: 15px;
+  border-radius: 5%;
+  height: 60px;
+  padding: 5px;
+}
+
+.counter {
+  font-size: 10px;
+  line-height: 1px;
 }

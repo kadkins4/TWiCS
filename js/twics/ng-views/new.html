@@ -1,9 +1,10 @@
-<h2>See a picture value of your phrases!</h2>
+<h2>A Picture Is Worth A Thousand 140 Characters!</h2>
 
 <form>
   <label>Phrase:</label>
-  <input placeholder="Enter Tweet Info" type="text" data-ng-model="vm.twic.content" />
-  <p>140 Character Max</p>
+  <br>
+  <textarea class="tweet_input" placeholder="Enter Tweet Info" data-ng-model="vm.twic.content" maxlength="140"></textarea>
+  <p class="counter">{{ 140 - vm.twic.content.length + ' char.' }}</p>
   <br>
   <input type="submit" data-ng-click="vm.create()" value="Submit">
 </form>
