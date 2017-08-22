@@ -13,6 +13,5 @@
     this.update = function () {
       this.twic.$update({id: $state.params.id})
     }
-    console.log(this.twic)
   }
 })()
