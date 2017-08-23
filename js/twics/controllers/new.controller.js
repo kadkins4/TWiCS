@@ -11,8 +11,8 @@
     this.twic = new Twic()
     this.create = function () {
       this.twic.$save(() => {
-        console.log('/#/twics/{ id: this.twic.id }')
-        $state.go('/#/twics/{{ this.twic.id }}')
+        // create a promise for this redirect?
+        $state.go('/#/twics/')
       })
     }
   }
