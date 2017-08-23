@@ -3,8 +3,8 @@
 <form>
   <label>Phrase:</label>
   <br>
-  <textarea class="tweet_input" placeholder="Enter Tweet Info" data-ng-model="vm.twic.content" maxlength="140"></textarea>
-  <p class="counter">{{ 140 - vm.twic.content.length + ' char.' }}</p>
+  <textarea class="tweet_input" placeholder="Enter Tweet Info" data-ng-model="vm.twic.handle" maxlength="50"></textarea>
+  <p class="counter">{{ 50 - vm.twic.handle.length + ' char.' }}</p>
   <br>
   <input type="submit" data-ng-click="vm.create()" value="Submit">
 </form>
