@@ -19,6 +19,13 @@ h1, h4, h2 {
   text-align: center;
 }
 
+h1 {
+  margin: 15px auto;
+}
+
+h4 {
+  margin: 10px 0 10px 0;
+}
 
 a {
   text-decoration: none;
@@ -29,10 +36,32 @@ a {
 .nav {
   font-size: 14px;
   text-align: center;
+  margin: 0 0 20px 0;
 }
 
 .nav a:hover {
   border-bottom: 1px solid black;
+}
+
+footer {
+  display: flex;
+  align-self: flex-end;
+}
+
+footer p {
+  word-spacing: 5px;
+}
+
+footer a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: black;
+  text-transform: uppercase;
+}
+
+footer a:hover {
+  text-decoration: overline;
 }
 
 form {
@@ -56,4 +85,35 @@ form {
 .counter {
   font-size: 10px;
   line-height: 1px;
+}
+
+/* show */
+
+.response-outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.response-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.response-img {
+  max-width: 25vw;
+  max-height: 25vh;
+  width: auto;
+  height: auto;
+  border: 3px solid rgba(200, 200, 200, .5);
+}
+
+.img-holder {
+  padding: 1%;
+  height: 100%;
 }
