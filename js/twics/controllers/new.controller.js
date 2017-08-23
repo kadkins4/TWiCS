@@ -8,11 +8,13 @@
   ])
 
   function TwicNewController ($state, Twic) {
+    this.hidebtn = false
     this.twic = new Twic()
     this.create = function () {
       this.twic.$save(() => {
+        this.hidebtn = true
         // create a promise for this redirect?
-        $state.go('twicShow/$state.params.id')
+        $state.go('twicsShow', { id: this.twic.id })
       })
     }
   }

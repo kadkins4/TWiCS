@@ -22,7 +22,7 @@
       controller: 'TwicNewController',
       controllerAs: 'vm'
     })
-    .state('twicShow', {
+    .state('twicsShow', {
       url: '/twics/:id',
       templateUrl: 'js/twics/ng-views/show.html',
       controller: 'TwicShowController',
