@@ -8,7 +8,7 @@
   ])
 
   function twicService ($resource) {
-    return $resource('http://localhost:3000/phrases/:id', {}, {
+    return $resource('https://twics.herokuapp.com/phrases/:id', {}, {
       update: {
         method: 'PUT'
       }
