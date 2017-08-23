@@ -8,7 +8,7 @@
   ])
 
   function twicService ($resource) {
-    return $resource('https://git.heroku.com/twics.git', {}, {
+    return $resource('https://twics.herokuapp.com/phrases/:id', {}, {
       update: {
         method: 'PUT'
       }
