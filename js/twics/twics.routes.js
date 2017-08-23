@@ -16,7 +16,7 @@
       controller: 'TwicIndexController',
       controllerAs: 'vm'
     })
-    .state('twicNew', {
+    .state('twicsNew', {
       url: '/twics/new',
       templateUrl: 'js/twics/ng-views/new.html',
       controller: 'TwicNewController',
