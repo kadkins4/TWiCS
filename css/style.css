@@ -110,11 +110,16 @@ form {
 }
 
 .response-img {
-  max-width: 25vw;
-  max-height: 25vh;
-  width: auto;
-  height: auto;
+  width: 23vw;
+  height: 35vh;
   border: 3px solid rgba(200, 200, 200, .5);
+}
+
+small {
+  color: white;
+  font-size: 20px;
+  text-transform: lowercase;
+  background: rgba(200,200,200,.5);
 }
 
 .img-holder {

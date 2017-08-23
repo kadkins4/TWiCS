@@ -3,7 +3,13 @@
   <h2 class="phrase-show">'{{ vm.twic.content }}'</h2>
   <div class="response-inner">
     <div ng-repeat="photo in vm.twic.photos" class="img-holder">
-      <img ng-src="{{ photo.photo_url }}" class="response-img"/>
+      <div class="response-img" style="background: url({{ photo.photo_url }}) center center; background-size: cover;">
+        <small>{{ photo.tags }}</small>
+      </div>
     </div>
   </div>
 </div>
+
+
+
+<!-- <img ng-src="{{ photo.photo_url }}" class="response-img"/> -->
