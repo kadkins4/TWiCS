@@ -8,7 +8,7 @@
   ])
 
   function tweetService ($resource) {
-    return $resource('http://localhost:3000/tweets/:id.json', {}, {
+    return $resource('https://twics.herokuapp.com/tweets/:id', {}, {
       update: {
         method: 'PUT'
       }
