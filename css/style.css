@@ -87,6 +87,10 @@ form {
   padding: 5px;
 }
 
+.handle_input {
+  height: 40px;
+}
+
 .counter {
   font-size: 10px;
   line-height: 1px;

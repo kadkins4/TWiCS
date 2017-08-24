@@ -1,0 +1,11 @@
+<div class="response-outer">
+  <h4>Your Phrase:</h4>
+  <h2 class="phrase-show">'{{ vm.tweet.content }}'</h2>
+  <div class="response-inner">
+    <div ng-repeat="pic in vm.tweet.pictures" class="img-holder">
+      <div class="response-img" style="background: url({{ pic.picture_url }}) center center; background-size: cover;">
+        <small>{{ pic.tags }}</small>
+      </div>
+    </div>
+  </div>
+</div>
