@@ -2,6 +2,5 @@
 <div data-ng-repeat="twic in vm.twics | orderBy:'created_on':true | limitTo:5 ">
   <div class="">
     <p><a data-ui-sref="twicsShow({ id: twic.id })">{{ twic.content }}</a></p>
-    <p><img ng-src="{{ twic.photos.photo.length }}"></p>
   </div>
 </div>

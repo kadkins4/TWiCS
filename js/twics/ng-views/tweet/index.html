@@ -1,0 +1,6 @@
+<h4>A Twic Look At The Past</h4>
+<div data-ng-repeat="tweet in vm.tweets | orderBy:'created_on':true | limitTo:5 ">
+  <div class="">
+    <p><a data-ui-sref="tweetsShow({ id: tweet.id })">{{ tweet.content }}</a> Tweeted by: @{{ tweet.handle }}</p>
+  </div>
+</div>
