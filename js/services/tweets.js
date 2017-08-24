@@ -8,7 +8,7 @@
   ])
 
   function tweetService ($resource) {
-    return $resource('https://localhost:3000/tweets/:id', {}, {
+    return $resource('http://localhost:3000/tweets/:id.json', {}, {
       update: {
         method: 'PUT'
       }
