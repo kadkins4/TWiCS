@@ -14,6 +14,7 @@
       this.tweet.$save(() => {
         this.hidebtn = true
         // create a promise for this redirect?
+        // No promise needed, this is correct
         $state.go('tweetsShow', { id: this.tweet.id })
       })
     }
