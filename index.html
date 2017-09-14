@@ -16,7 +16,7 @@
     <script src="js/twics/controllers/tweet/new.controller.js"></script>
     <script src="js/services/twics.js"></script>
     <script src="js/services/tweets.js"></script>
-
+    <!-- Nice job breaking the app up into smaller pieces and loading them all in independently -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body data-ng-app="twics">
@@ -28,9 +28,14 @@
         <a href="#/twics/new">New Twic</a> |
         <a href="#/tweets/new">New Handle Search</a> |
         <a href="#/tweets">Handle History</a>
+        <!-- <a data-ui-sref="twicsIndex">TwicStory</a> |
+        <a data-ui-sref="twicsNew">New Twic</a> |
+        <a data-ui-sref="tweetsNew">New Handle Search</a> |
+        <a data-ui-sref="tweetsInde">Handle History</a> -->
+        <!-- Use ui-router's ui-sref for routing, not href -->
       </nav>
       <main class="data-ui-view"></main>
-
+      <!-- <main data-ui-view></main> -->
       <footer>
         <p>Created by:
           <a href="https://github.com/cwcox">Charles</a>,

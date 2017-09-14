@@ -131,3 +131,11 @@ small {
   padding: 1%;
   height: 100%;
 }
+
+/*Consider two changes:
+1. Reorder your CSS selectors from most general to most specific:
+  - All element selectors first
+  - All class selectors next
+  - All id selectors last
+2. Consider implementing a CSS naming system such as BEM (Block-Element Modifier)
+  - http://getbem.com/*/
